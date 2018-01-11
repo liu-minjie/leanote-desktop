@@ -197,7 +197,6 @@ var openContextmenu = function (e, canCut2, canPaste2) {
     if(!winHref) {
         winHref = text;
     }
-    // 判断是否满足http://leanote.com
     if(winHref) {
         if (winHref.indexOf('http://127.0.0.1') < 0 && isURL(winHref)) {
         } else {

@@ -37172,7 +37172,6 @@ define("tinymce/ui/ListBox", [
 
 		/**
 		 * disable/enable 某一list的item
-		 * leanote ace life ace
 		 * value = convert, state = true | false
 		 */
 		diableValue: function(value, state) {

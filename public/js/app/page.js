@@ -1537,7 +1537,7 @@ function initPage(initedCallback) {
 							}
 							if(err['Msg'] == 'NEED-UPGRADE-ACCOUNT') {
 								alert(getMsg('You need to upgrade Leanote account'));
-								openExternal('https://leanote.com/pricing#buy');
+								openExternal(window.Config.host + '/pricing#buy');
 								setTimeout(function () {
 		                    		toLogin();
 								}, 1000);
@@ -2028,7 +2028,7 @@ function setMacTopMenu() {
 
 function getShortHost(host) {
     if (!host) {
-        host = 'https://leanote.com';
+        host = window.Config.host ;
     }
     var ret = /http(s*):\/\/([a-zA-Z0-9\.\-]+)/.exec(host);
     if (ret && ret.length == 3) {
@@ -2096,7 +2096,7 @@ function userMenu(allUsers) {
     function menu() {
         var me = this;
         // this.target = '';
-        UserInfo.Host = UserInfo.Host || 'https://leanote.com';
+        UserInfo.Host = UserInfo.Host || window.Config.host;
         var shortHost = getShortHost(UserInfo.Host);
 
         this.menu = new gui.Menu();

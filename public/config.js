@@ -35,5 +35,6 @@ var Config = {
     ],
     "lang": "",
     "theme": "",
-    "view": "snippet"
+    "view": "snippet",
+    "host": "http://leanote.com:9000"
 };

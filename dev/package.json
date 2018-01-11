@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
+    "electron": "^1.7.10",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.3.2",
     "gulp-concat": "",
@@ -16,5 +17,8 @@
   "license": "GPL v2",
   "bugs": {
     "url": "https://github.com/leanote/desktop-app/issues"
+  },
+  "scripts": {
+    "start": "electron ../"
   }
 }

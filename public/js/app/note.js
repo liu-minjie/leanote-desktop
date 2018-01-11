@@ -1390,7 +1390,7 @@ Note.fixNetOrAuthError = function() {
         // 需要升级Leanote
     } else if (reason == 'NEED-UPGRADE-ACCOUNT') {
         alert(getMsg('You need to upgrade Leanote account'));
-        openExternal('https://leanote.com/pricing#buy');
+        openExternal(window.Config.host + '/pricing#buy');
     }
 };
 
@@ -2624,7 +2624,6 @@ var Attach = {
             var attachId = $(this).closest('li').data("id");
             var attach = self.attachsMap[attachId];
             var src = EvtService.getAttachLocalUrl(attachId); // + "/attach/download?attachId=" + attachId;
-            // http://leanote.com/attach/download?attachId=54f7481638f4112ff000170f
 
             Note.toggleWriteable();
             if (LEA.isMarkdownEditor() && MD) {
